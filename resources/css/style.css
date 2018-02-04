@@ -1,9 +1,14 @@
 
+body {
+  font-size: 14px;
+  font-family: Open Sans;
+}
+
 .navbar-default .navbar-nav > .active > a
 
 .navbar-default .navbar-nav > .active > a:hover
 
- @media screen and (max-width: 600px) {
+ @media screen and (max-width: 780px) {
    ul img {
      display: none;
    }
@@ -12,15 +17,61 @@
    }
  }
 
+ul .active {
+  color: #399bd1;
+}
+
+ul a {
+  font-family: Open Sans;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
 .jumbotron .jumbotron-bike {
   background-image: url(resources\images\jumbotron-bike.jpg);
 }
 
-h1 {
+.getgoing {
+  width: 51.3rem;
+}
+
+.getgoing h1 {
   font-family: Monoton;
   font-size: 7.1 rem;
   color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  margin-top: 11.85rem;
+}
+
+.getgoing p {
+  margin-bottom: 2.8rem;
+}
+
+.jump a {
+  margin-bottom: 11.85rem;
+}
+
+.jump a, .learn a {
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+  width: 11.4rem;
+  background-color: #399bd1;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  margin-bottom: 11.85rem;
+}
+
+.jump a:hover, .learn a:hover {
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
+}
+
+.jump a:active, .learn a:hover {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+}
+
+.featured h2 {
+  margin-bottom: 20px;
+  font-size: 1.7rem;
+  font-weight: bold;
 }
 
 .featured img {
@@ -28,16 +79,52 @@ h1 {
 }
 
 .image-container {
-  width: 25%;
+  width: 33%;
+}
+
+.image-container p {
+  margin-bottom: 5.85rem;
 }
 
  @media screen and (max-width: 600px) {
 .image-container {
-     width: 50%;
+     width: 100%;
    }
  }
 
-
 .image-container img {
   opacity: 0.7;
+}
+
+.featured h4 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.featured p {
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.trouble {
+  background-color: #f3f3f3;
+}
+
+#trouble {
+  width: 42rem;
+}
+
+#trouble h5 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.4rem;
+  margin-top: 5.2rem;
+}
+
+#trouble h6 {
+  width: 42rem;
+}
+
+.learn a {
+  margin-bottom: 5.2rem;
 }
