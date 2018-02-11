@@ -19,11 +19,46 @@ h3 {
   font-weight: bold;
 }
 
+img {
+  width: 100%;
+}
+
 /*header*/
 
-.navbar-default .navbar-nav > .active > a
+.navbar-default .navbar-nav > .active > a,
 
-.navbar-default .navbar-nav > .active > a:hover
+.navbar-default .navbar-nav > .active > a:hover {
+  background-color: inherit;
+  color: #399bd1;
+}
+
+.btn-primary {
+  width: 160px;
+  padding: 1.3rem 0;
+  border: 0;
+  margin-top: 2.8rem;
+  background-color: #399bd1;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  transition: .5s box-shadow;
+}
+
+.btn-primary:hover {
+  background-color: #399bd1;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
+}
+
+.btn-primary:active {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+}
+
+.slick-slide {
+  outline: none;
+}
+
+.navbar {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
 
 ul .active {
   color: #399bd1;
@@ -49,6 +84,32 @@ ul a {
 
 /*carousel*/
 
+.jumbotron {
+  height: 44rem;
+  padding-top: 10rem;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.jumbotron p {
+  max-width: 51.3rem;
+  margin: auto;
+}
+
+.relative-wrapper {
+  position: relative;
+  top: -16rem;
+  width: 100%;
+  text-align: center;
+}
 
 .jumbotron .jumbotron-bike {
   background-image: url(resources\images\jumbotron-bike.jpg);
@@ -58,13 +119,15 @@ ul a {
   width: 51.3rem;
 }
 
-.getgoing h1 {
-  font-family: Monoton;
-  font-size: 7.1 rem;
+.jumbotron h1 {
+  font-family: "Monoton", sans-serif;
+  font-size: 7.1rem;
   color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   margin-top: 11.85rem;
 }
+
+
 
 .getgoing p {
   margin-bottom: 2.8rem;
@@ -116,9 +179,30 @@ ul a {
   }
 }
 
+@media only screen and (max-width: 550px) {
+  .jumbotron h1 {
+    font-size: 4rem;
+  }
+}
+
 /*featured*/
 
+.featured {
+  margin-top: -7rem;
+}
 
+.featured .image-container {
+  height: 19rem;
+  margin-top: 20px;
+}
+
+.cateories h3 {
+  color: #399bd1;
+}
+
+.categories p {
+  color: rgba(0, 0, 0, 0.7);
+}
 
 .featured img {
   width: 50%;
@@ -148,9 +232,13 @@ ul a {
 
 /*projects*/
 
-.image-container {
-  width: 33%;
+.project {
+  margin-bottom: 5.85rem;
+}
 
+.project .image-container {
+  overflow: hidden;
+  height: 13.5rem;
 }
 
 .image-container p {
@@ -166,7 +254,8 @@ ul a {
 .image-container img:hover {
   opacity: 1;
   transform: scale(1.3);
-  overflow: hidden;
+  -webkit-transform: scale(1.3);
+-ms-transform: scale(1.3);
 }
 
 @media only screen and (max-width: 780px) {
@@ -178,7 +267,21 @@ ul a {
 /*trouble*/
 
 .trouble {
+  padding: 5.2rem 0;
   background-color: #f3f3f3;
+  text-align: center;
+}
+
+.trouble strong {
+  display: inline-block;
+  margin-bottom: 1.4rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.trouble p {
+  max-width: 42rem;
+  margin: auto;
 }
 
 #trouble {
