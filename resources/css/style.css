@@ -1,7 +1,22 @@
 
-body {
+html {
   font-size: 14px;
-  font-family: Open Sans;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #399bd1;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
 /*header*/
@@ -103,11 +118,7 @@ ul a {
 
 /*featured*/
 
-.featured h2 {
-  margin-bottom: 20px;
-  font-size: 1.7rem;
-  font-weight: bold;
-}
+
 
 .featured img {
   width: 50%;
